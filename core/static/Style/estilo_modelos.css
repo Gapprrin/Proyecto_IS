@@ -1,0 +1,808 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    font-family: "Open Sans", sans-serif; 
+    margin: 0; 
+}
+
+#logo{
+    width: 130px;
+    height: 70px;
+   
+}
+
+#logo>img{
+    width: 120px;
+    height: 40px;
+    margin-top: 15px;
+   
+}
+
+
+
+
+
+nav{
+	background-color: #000000; 
+	display: flex; 
+	justify-content: space-around;
+	align-items: center;
+height: 70px;
+
+
+}
+
+
+
+a{
+	color: #ffffff;
+	text-transform: uppercase;
+	text-decoration: none;
+    font-size: 13px;
+  
+}
+
+
+
+
+
+
+.informacion_derecha {
+
+    width: 27%;
+    height: 70%;
+    position: absolute;
+    top: 4%; /* Ajusta la posición vertical según sea necesario */
+    right:10%; /* Ajusta la posición horizontal según sea necesario */
+    overflow: auto; /* Ajusta el desbordamiento según sea necesario */
+
+
+}
+
+.informacion_derecha>h5 {
+    text-align: center;
+    color: #ffffff;
+}
+
+.informacion_derecha>p {
+    text-align: justify;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 12px;
+
+ 
+}
+
+.informacion_derecha p:before {
+    content: 'olorfrd jsjfhrum dcing ipsum dolorfrd jsjfhr icing Lor olorfrd jsjfhr icing ipsum dolorfrd jsjfhr icing Lorcing Lor olorfrd jsjfhr icing ipsum dolorfrd jsjfhr icing Lorg Lor olorfrd jsjfhr icing ipsum dolorfrd jsjfhr icing Loripsum dolorfrd jsjfhr icing Lor Lorem ipsum dolorfrd jsjfhr icing ipsum dolorfrd jsjfhr icing Lorem isjdjhd Lorem ipsum dolorfrd jsjfhr icing ipsum dolorfrd jsjfhr icing Lorem isjdjhd Lorem ipsum dolorfrd jsjfhr icing ipsum dolorfrd jsjfhr icing Lorem isjdjhdjsjfhr icing ipsum dolorfrd jsjfhr icing Lorem isjdjhddkfd m, quisquam, ue illumksh Lorem ipsum dolor, sit amet consectetur adipisicing Lorem ipsum dolor, sidlfkdkfk djgkk fm dkf dkfd m, quisquam, ue illumksh Lorem ipsum dolor, sit amet consectetur adipisicing Lorem ipsum dolor, sidlfkdkfk djgkk fm dkf dkfd m, quisquam, ue illumksh Lorem ipsum dolor, sit amet consectetur adipisicing Lorem ipsum dolor, sidlfkdkfk djgkk fm dkf dkfd m, quisquam, ue illumksh Lorem ipsum dolor, sit amet consectetur adipisicing Lorem ipsum dolor, sidlfkdkfk djgkk fm ';
+}
+
+
+.botones {
+    width: 27%;
+    height: 14%;
+  
+    position: absolute;
+    top: 79%; /* Ajusta la posición vertical según sea necesario */
+    right: 10%; /* Ajusta la posición horizontal según sea necesario */
+    overflow: auto;
+    display: flex;
+}
+
+.boton1{
+    width: 48%;
+    height: 40%;
+    background-color: rgb(209, 123, 25);
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 1%;
+    font-size: 12px;
+    font-weight: bold;
+  
+    
+}
+
+.boton2{
+    width: 48%;
+    height: 40%;
+    background-color: rgb(209, 123, 25);
+    margin-left: 3%;
+    border-radius: 5px;
+    text-align: center;
+    padding-top:1%;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+
+.boton3 {
+    width: 100%;
+    height: 40%;
+    background-color: rgb(209, 123, 25);
+    border-radius: 5px;
+    text-align: center;
+    padding-top: 1%;
+    bottom: 0%; /* Ajusta la distancia vertical */
+    position: absolute;
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+
+
+
+  #final2 {
+    height: 40vh;
+    width: 100%;
+    background-color: #161616;
+    margin-top: 0px;
+    display: flex;
+    padding-left: 50px;
+
+
+}
+
+#final2>ul {
+    width: 1000px;
+    background-color: #161616;
+    padding-left: 2px;
+    margin-left: 40px;
+    height: 220px;
+    padding-top: 30px;
+
+
+}
+
+#texto_ultimo {
+
+    height: 12vh;
+    background-color: #161616;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 0px;
+
+
+
+
+}
+
+#texto_ultimo>h6 {
+    color: #cecece;
+    text-align: center;
+    display: flex;
+    font-size: 14px;
+    margin-top: 30px;
+    background-color: #161616;
+}
+
+#instagram {
+
+    width: 40px;
+    height: 40px;
+    margin-left: 550px;
+    display: flex;
+    margin-top: -50px;
+
+}
+
+
+#whatsap {
+
+    width: 40px;
+    height: 40px;
+    margin-left: 700px;
+    display: flex;
+    margin-top: -40px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*Cambios para sitio responsivo*/
+
+.text_home{
+
+    margin-top: 5px; 
+    display: flex; 
+    margin-left: 1px;
+
+}
+
+.text_modelos{
+    margin-top: -15px;
+     display: flex; 
+     margin-left: 20px;
+}
+
+.text_accesorios{
+    margin-top: -17px;
+     display: flex; 
+     margin-left: 20px;
+}
+
+.text_acerca{
+    margin-top: -17px;
+     display: flex; 
+     margin-left: 20px;
+}
+
+.text_carrito{
+    margin-top: -17px;
+     display: flex; 
+     margin-left: 20px;
+}
+
+.text_sesion{
+    margin-top: -17px;
+     display: flex; 
+     margin-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* Sitio responsivo */
+
+
+
+
+  @media (max-width: 1130px) {
+
+    .boton1{
+  
+        font-size: 10px;
+
+      
+        
+    }
+    
+    .boton2{
+  font-size: 10px;
+    }
+    
+    
+    .boton3 {
+        font-size: 10px;
+      }
+
+
+
+  }
+
+
+  @media (max-width: 1018px) {
+
+    #final2{
+        display: none;
+    }
+
+  }
+
+
+
+
+  @media (max-width: 950px) {
+
+
+    .informacion_derecha p:before {
+        content: 'drd jsjfhr i dolorfjfhr icing iping  ipsum dolorfrd jsj icing iping  ipsum dolorfrd jsjfhr icing ipsum dolorfrdfhr icing ipsum dolorfrd  icing i icing iping  ipsum dolorfrd jsjfhr icing ipsum dolorfrdping  ipsum dolorfrd jsjfhr icing ipsum dolorfrdjsjfhrfhr rd jsjfhr icing  ipsum dolorfrd jsjfhr icing ipsum dolorfrd jsjfhr';
+    }
+
+    .informacion_derecha>h5 {
+       font-size: small;
+    }
+
+
+    .botones {
+        width: 27%;
+        height: 30%;
+        position: absolute;
+        top: 62%; /* Ajusta la posición vertical según sea necesario */
+        right: 10%; /* Ajusta la posición horizontal según sea necesario */
+        overflow: auto;
+        display: flex;
+    
+    }
+    
+    .boton1{
+        width: 100%;
+        height: 25%;
+        padding: 5px;
+  padding-left: 0px;
+      
+        font-size: 10px;
+      
+      
+        
+    }
+    
+    .boton2{
+  width: 100%;
+  height: 25%;
+  top: 36%;
+
+  position: absolute;
+
+  margin-left: 0;
+  padding: 5px;
+
+
+    
+    } 
+    .boton3{
+    width: 100%;
+    height: 25%;
+  }  
+}
+
+
+
+@media (max-width: 915px) {
+
+    .informacion_derecha p:before {
+        content: 'jjd djcn csum dolorfrdum jajsjdbfbj df dohrfhr icing  ipsum dolorfrd jsjfhr icing ipsum dolorr rd jsjfh r icing  ipsum dolorfrd jsjfhr icing ipsum dolorr icing  ipsum dolorfrd jsjfhr icing ipsum dolorfrd jsjfhr';
+    }
+ 
+}
+
+
+
+@media (max-width: 870px) {
+
+    nav{
+        height: 60px;
+    }
+
+    #logotipo > img {
+        margin-top: 2px;
+        margin-left: 15px;
+            width: 83px; /* Cambiado a un valor porcentual para que sea proporcional al tamaño del logo */
+            height: 25px; /* Usando 'auto' para mantener la proporción del logotipo */
+   
+     
+   }
+
+
+#home{
+    .text_home{
+        display: none;
+    }
+}
+
+#carrito{
+    .text_carrito{
+        display: none;
+    }
+}
+
+#iniciarsesion{
+    .text_sesion{
+        display: none;
+    }
+}
+
+#modelos{
+    .text_modelos{
+        display: none;
+    }
+}
+#accesorios{
+    .text_accesorios{
+        display: none;
+    }
+}
+
+#acercade{
+    .text_acerca{
+        display: none;
+    }
+}
+
+
+}
+
+@media (max-width: 870px) {
+
+ .informacion_derecha>p{
+    display: none;
+ }
+
+.informacion_derecha>h5{
+    margin-top: 30%;
+}
+.botones{
+   margin-top: -3%;
+}
+
+#instagram{
+    display: none;
+}
+
+#whatsap{
+    display: none;
+}
+
+}
+
+@media (max-width: 600px) {
+.boton1{
+    width: 70%;
+    height: 70%;
+    margin-left:15% ;
+
+
+   }
+
+   .boton2{
+    display: none;
+   }
+
+   .boton3{
+    display: none;
+   }
+}
+
+
+
+/*APY DOLAR*/
+.contenedor_apy {
+    width: 100%;
+    min-height: 100vh; /* Usar altura mínima del viewport */
+   background-color: #171717;
+}
+
+#info {
+    width: 100%;
+
+    background-color: #000000;
+
+    align-items: center;
+}
+
+#info h4{
+    text-align: center;
+    height: 12%;
+   color: #ffffff;
+
+}
+
+#info h5{
+    text-align: center;
+    height: 12%;
+   color: #ffffff;
+
+ 
+
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 2%; /* Cambiar a un valor más pequeño para mantener el espacio entre los productos */
+    justify-content: space-evenly /* Cambiar a 'space-around' para distribuir los productos uniformemente */
+
+}
+
+.producto {
+    width: 30%;
+    max-width: 300px; 
+    height: 300px;
+    margin-bottom: 2%; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.imagen {
+    width: 100%;
+    height: 70%;     /* Ajustar la altura de la imagen según sea necesario */
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.precio {
+    margin-bottom: 5px;
+    text-align: center; /* Centrar el texto del precio */
+   color: #ffffff;
+}
+
+.nombre {
+    font-weight: bold;
+    text-align: center; /* Centrar el texto del nombre */
+    color: #ffffff;
+    
+}
+
+
+/*APY USUARIOS-----------------------------------------------------------------------------------------------------------------*/
+
+#usuarios_registrados {
+
+
+    width: 100%;
+background-size: cover;
+    background-image: url(../Images/Modelos_auto/usuarios3.jpg);
+
+
+
+
+
+}
+
+
+.contenedor_apy_users {
+    width: 60%;
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.7); /* Color blanco con 80% de opacidad */
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contenedor_apy_users img {
+
+    width: 14%;
+    height: 14%;
+    border-radius: 50px;
+
+
+}
+
+
+#usuarios_registrados>h2 {
+    text-align: center;
+    color: #fff;
+    font-size: medium;
+    padding-top: 4%;
+
+
+}
+
+.boton_apy {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#boton {
+    border: none;
+ background-color: #ec7926;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all ease 400ms;
+}
+
+
+.contenedor_apy_users h2{
+font-size: small;
+color: #000000;
+}
+
+
+.contenedor_apy_users p{
+    font-size: small;
+    color: #000000;
+    }
+
+
+
+
+.datos{
+    font-size: small;
+}
+
+#correo{
+    font-size: small;
+}
+
+
+
+#imagenVolante {
+    background-image: url("../Images/Modelos_auto/volante2.jpg");
+    width: 100%;
+    height: 37vh;
+    background-size: cover;
+ 
+}
+
+
+
+
+#imagenVolante>h3{
+    font-size: 40px;
+}
+
+/* Hacer que la barra de navegación superior sea transparente */
+.navbar.navbar-dark.bg-dark {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+/* Hacer que el fondo del offcanvas sea negro desde el principio */
+.offcanvas {
+    background-color: #000 !important;
+}
+
+/* Hacer que el área del contenido del offcanvas sea transparente */
+.offcanvas-body {
+    background-color: transparent !important;
+}
+
+/* Cambiar el color del icono de hamburguesa a negro */
+.navbar-toggler-icon {
+    color: #000 !important;
+}
+
+
+#textoNuevaColeccion {
+    width: 100%;
+    height: 5vh;
+background-color: #161616;
+    display: flex; /* Hace que el contenedor sea un contenedor flexible */
+    align-items: center; /* Alinea los elementos hijos verticalmente en el centro */
+    justify-content: center; /* Alinea los elementos hijos horizontalmente en el centro */
+}
+
+#textoNuevaColeccion>h4{
+
+width: 100%;
+padding-top: 20px;
+font-size: medium;
+color: #ffffff;
+text-align: center;
+
+
+
+}
+/* Estilos para el contenedor del carrusel */
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    padding: 20px 0;
+    background-color: #161616;
+    height: 100%;
+}
+
+/* Estilos para los elementos del carrusel */
+.autos {
+    flex: 0 0 auto;
+    width: 100%; /* Ancho de cada elemento */
+    max-width: 470px; /* Ancho máximo para mantener la escala en pantallas más grandes */
+    margin: 0 10px;
+    border-radius: 10px;
+    background-color: #191919;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Estilos para la imagen del auto */
+.imagen_auto {
+    width: 100%;
+    height: 35vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Estilos para la información del auto */
+.info_auto {
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Ajustar la descripción para que se vea completa y centrada */
+.descripcion_auto {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-align: center;
+    width: 100%; /* Ajustar el ancho al 100% del contenedor */
+    word-wrap: break-word; /* Permitir que las palabras se ajusten a la línea */
+    overflow: hidden; /* Ocultar el desbordamiento */
+    white-space: normal; /* Permitir el ajuste de línea */
+}
+
+/* Otros estilos de información del auto */
+.nombre_auto {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.stock_auto {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.botonesAuto {
+    display: flex;
+   justify-content: space-between;
+    padding: auto;
+    align-items: center;
+}
+
+.botoncito {
+    background-color: #d76010;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 10px;
+    width: 140px;
+    font-size: small;
+}
+
+.botoncito:hover {
+    background-color: #e5902f;
+}
+
+#imagenVolante>h3 {
+    color: #ffffff;
+    float: right;
+    margin-top: 20px;
+    margin-right: 70px;
+}
