@@ -40,4 +40,58 @@ class NuevaColeccion(models.Model):
 
     class Meta:
         db_table = 'nueva_coleccion'  # Especifica el nombre de la tabla
+
+
+class Categoria(models.Model):
+    id = models.AutoField(primary_key=True)
+    nombreCategoria = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.nombreCategoria
+    
+class Vehiculo(models.Model):
+    id = models.AutoField(primary_key=True)
+    nombre_vehiculo = models.CharField(max_length=50)
+    descripcion_vehiculo = models.CharField(max_length=200)
+    stock_vehiculo = models.IntegerField()
+    imagen_vehiculo = models.CharField(max_length=255)
+    categoria = models.ForeignKey(to=Categoria, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.nombre_vehiculo
+
+
+class Accesorios_desc(models.Model):
+    id = models.AutoField(primary_key=True)
+    nombre_accesorio = models.CharField(max_length=50)
+    descripcion_accesorio = models.CharField(max_length=200)
+    precio_accesorio = models.IntegerField()
+    stock_accesorio = models.IntegerField()
+    imagen_accesorio= models.CharField(max_length=255)
+  
+
+    def __str__(self):
+        return self.nombre_accesorio
+    
+
+class CategoriaAccesorios(models.Model):
+    id = models.AutoField(primary_key=True)
+    nombre_categoria_acc = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.nombre_categoria_acc
+    
+class Accesorios(models.Model):
+    id = models.AutoField(primary_key=True)
+    nombre_acc = models.CharField(max_length=50)
+    precio_acc= models.IntegerField()
+    descripcion_acc = models.CharField(max_length=200)
+    stock_acc = models.IntegerField()
+    imagen_acc = models.CharField(max_length=255)
+    categoria = models.ForeignKey(to=CategoriaAccesorios, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.nombre_acc
+    
+    
     

@@ -73,10 +73,10 @@
   </div>
 </nav>
 <!--TÉRMINO CATEGORIAS-->
-<h3>Conduce con estilo <br>y disfruta un viaje inolvidable</h3>
-<div style="float: right;margin-right:-350px">
-  <button class="btn btn-outline-success" type="submit" style="border-color: rgb(218, 112, 19); background-color: transparent; color: rgb(218, 92, 19); margin-top: 140px; width: 350px;">
-    Solicitar información
+<h3>Conduce con estilo<br>Y disfruta un viaje único<br>Con la nueva colección</h3>
+<div style="float: right; margin-right: -350px;">
+  <button class="btn btn-outline-success custom-btn" type="submit" id="botonporfiao">
+    Solicitar información de compra
   </button>
 </div>
 
@@ -84,23 +84,22 @@
 
 
 <div id="textoNuevaColeccion">
-
-<h4>NUEVA COLECCIÓN "ELITE VELOCITY EDITION</h4>
-
-
+  <h4>CONOCE NUESTRA NUEVA COLECCIÓN "ELITE VELOCITY EDITION"</h4>
+  
 </div>
 
-<div id="nueva_coleccion" class="carousel"><!--COMIENZO DIV CONTENEDOR-->
+
+<div id="nueva_coleccion" class="carousel"><!--COMIENZO DIV NUEVA COLECCION-->
   {% for item in nueva_coleccion %}
   <div class="autos">
       <div class="imagen_auto" style="background-image: url('{{ item.imagen_auto }}');"></div>
       <div class="info_auto">
           <div class="nombre_auto">{{ item.nombre_auto }}</div>
           <div class="descripcion_auto">{{ item.descripcion_auto }}</div>
-          <div class="stock_auto">{{ item.stock_auto }}</div>
+          <div class="stock_auto">{{ item.stock_auto }} Modelos disponibles</div>
           <div class="botonesAuto">
               <button class="botoncito">Cotizar vehículo</button>
-              <button class="botoncito">Solicitar asesoría</button>
+              <button class="botoncitoBorrar">Solicitar asesoría</button>
               <button class="botoncito">Descripción general</button>
           </div>
       </div>
@@ -108,11 +107,96 @@
   {% endfor %}
 </div><!--TERMINO DIV NUEVA COLECCION-->
 
+<div id="textoNuevaColeccion">
+  <h4>EXPLORA NUESTRA COLECCIÓN "SPORT EDITION FULL BLABLA"</h4>
+  
+</div>
+
+
+  <div id="vehiculosDeportivos" class="carousel">
+    <!-- COMIENZO DIV CATEGORIA DEPORTIVOS -->
+    {% for item in vehiculos_deportivos %}
+    <div class="autos">
+        <div class="imagen_auto" style="background-image: url('{{ item.imagen_vehiculo }}');"></div>
+        <div class="info_auto">
+            <div class="nombre_auto">{{ item.nombre_vehiculo }}</div>
+            <div class="descripcion_auto">{{ item.descripcion_vehiculo }}</div>
+            <div class="stock_auto">{{ item.stock_vehiculo }} Modelos disponibles</div>
+            <div class="categoria">Categoría vehículo : {{ item.categoria.nombreCategoria }}</div>
+            <div class="botonesAuto">
+                <button class="botoncito">Cotizar vehículo</button>
+                <button class="botoncitoBorrar">Solicitar asesoría</button>
+                <button class="botoncito">Descripción general</button>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    <!-- TERMINO DIV CATEGORIA DEPORTIVOS -->
+</div>
+
+<div id="textoNuevaColeccion">
+  <h4>SIENTE LA SEGURIDAD CON NUESTRA COLECCIÓN "BLABLABLA"</h4>
+  
+</div>
+
+
+<div id="vehiculosFamiliares" class="carousel">
+  <!-- COMIENZO DIV CATEGORIA DEPORTIVOS -->
+  {% for item in vehiculos_familiares%}
+  <div class="autos">
+      <div class="imagen_auto" style="background-image: url('{{ item.imagen_vehiculo }}');"></div>
+      <div class="info_auto">
+          <div class="nombre_auto">{{ item.nombre_vehiculo }}</div>
+          <div class="descripcion_auto">{{ item.descripcion_vehiculo }}</div>
+          <div class="stock_auto">{{ item.stock_vehiculo }} Modelos disponibles</div>
+          <div class="categoria">Categoría vehículo : {{ item.categoria.nombreCategoria }}</div>
+          <div class="botonesAuto">
+              <button class="botoncito">Cotizar vehículo</button>
+              <button class="botoncitoBorrar">Solicitar asesoría</button>
+              <button class="botoncito">Descripción general</button>
+          </div>
+      </div>
+  </div>
+  {% endfor %}
+  <!-- TERMINO DIV CATEGORIA DEPORTIVOS -->
+</div>
+
+<div id="textoNuevaColeccion">
+  <h4>DISFRUTA DE LA TECNOLOGÍA CON NUESTRA COLECCIÓN "BLABLABLA"</h4>
+  
+</div>
+
+<div id="vehiculosElectricos" class="carousel">
+  <!-- COMIENZO DIV CATEGORIA DEPORTIVOS -->
+  {% for item in vehiculos_electricos%}
+  <div class="autos">
+      <div class="imagen_auto" style="background-image: url('{{ item.imagen_vehiculo }}');"></div>
+      <div class="info_auto">
+          <div class="nombre_auto">{{ item.nombre_vehiculo }}</div>
+          <div class="descripcion_auto">{{ item.descripcion_vehiculo }}</div>
+          <div class="stock_auto">{{ item.stock_vehiculo }} Modelos disponibles</div>
+          <div class="categoria">Categoría vehículo : {{ item.categoria.nombreCategoria }}</div>
+          <div class="botonesAuto">
+              <button class="botoncito">Cotizar vehículo</button>
+              <button class="botoncitoBorrar">Solicitar asesoría</button>
+              <button class="botoncito">Descripción general</button>
+          </div>
+      </div>
+  </div>
+  {% endfor %}
+  <!-- TERMINO DIV CATEGORIA DEPORTIVOS -->
+</div>
 
 
 
 
+<div id="imagenFinal">
+<h4>VISITA NUESTROS CONCESIONARIOS Y DESCUBRE EL AUDI PERFECTO PARA TÍ</h4>
+<button class="btn btn-outline-success" id="botonUltimo"type="submit" style="border-color: rgb(255, 255, 255); background-color: transparent; color: rgb(255, 255, 255);width: 350px;margin-left: 2%; margin-top: 20px;">
+  Ver concesionarios
+</button>
 
+</div>
 
 
 
